@@ -1,0 +1,194 @@
+/* ---------common css-------- */
+*{
+  font-family:  "Inter", sans-serif;
+  background: rgb(247, 248, 249);
+}
+
+.sub-headings{
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(18, 18, 18);
+  line-height: 10px;
+}
+
+.grey{
+  color:rgb(131, 145, 161);
+}
+
+.small{
+  font-size: 14px;
+  line-height: 8px;
+}
+
+.red-button{
+  background-color: rgb(255, 109, 106);
+  color: white;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  }
+
+.linked-words{
+  color: rgb(95, 125, 202);
+  text-decoration:none;
+}
+
+input{
+  width: 200px;
+  height: 40px;
+  border: 0.5px solid rgb(156, 155, 155);
+  background-color: rgb(247, 248, 249);
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 5px;
+}
+
+input::placeholder{
+  text-align: center;
+  color: rgb(161, 159, 159);
+}
+
+.back-icon{
+  font-size: 36px;
+  color: grey;
+  line-height: 5px;
+  cursor: pointer;
+}
+
+.fastor-logo{
+  width: 50px;
+}
+
+/* --------restaurants-page---- */
+.restaurant-wrapper{
+  padding: 3%;
+}
+
+.restaurants-grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 5%;
+}
+
+.restaurants-grid > div{
+  padding: 10px;
+  box-shadow: 
+  2px 2px 4px rgba(0, 0, 0, 0.2), 
+  -2px -2px 4px rgba(0, 0, 0, 0.2), 
+  -2px 2px 4px rgba(0, 0, 0, 0.2), 
+  2px -2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.restaurants-grid .same-img{
+  width: 100%;
+  cursor: pointer;
+}
+
+.logout-button{
+  float: right;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 8px;
+}
+
+.logout-button:hover{
+background-color: rgb(219, 64, 64);
+}
+
+.restaurant-name-rating{
+  display: flex;
+  justify-content: space-between;
+}
+
+.share-img{
+  width: 30px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.location-wrap{
+display: flex;
+align-items: center;
+gap: 3px;
+}
+
+@keyframes glowing {
+  0% { text-shadow: 0 0 10px #9bbb9b; }
+  50% { text-shadow: 0 0 20px #ff6600; }
+  100% { text-shadow: 0 0 10px #5d00ff; }
+}
+
+.text-glow {
+  font-weight: bold;
+  color: #FFFFFF;
+  animation: glowing 2s infinite;
+}
+
+
+/* --------imageslider---------- */
+.image-slide-wrapper{
+  border-radius: 15px;
+  width: 350px;
+  height: 200px;
+}
+
+
+/*---------- login page-------- */
+
+.login-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-wrapper > div{
+padding: 5%;
+margin-top: 20px;
+box-shadow: 
+2px 2px 4px rgba(0, 0, 0, 0.2), 
+-2px -2px 4px rgba(0, 0, 0, 0.2), 
+-2px 2px 4px rgba(0, 0, 0, 0.2), 
+2px -2px 4px rgba(0, 0, 0, 0.2);
+border-radius: 8px;
+}
+
+.dial-code{
+width: 60px;
+}
+
+.redirect-register{
+  color: rgb(105, 104, 104);
+  text-align: right;
+}
+
+
+
+@media (max-width:850px) {
+  .restaurants-grid{
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .image-slide-wrapper{
+      margin:auto;
+      border-radius: 8px;
+      width: 300px;
+      height: 180px;
+    }
+}
+
+@media (max-width:480px) {
+  .restaurants-grid{
+    grid-template-columns: 1fr;
+    gap: 1%;
+    }
+    .image-slide-wrapper{
+      margin:auto;
+    }
+}
