@@ -29,10 +29,6 @@ List and provide a brief overview of the technologies used in the project.
 - React JS
  
  ### Dependencies and packages
-react-router-dom": "^6.18.0",
-    "react-scripts": "5.0.1",
-    "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1",
 #### frontend
 - react-router-dom<br/>
    used for routing to different url
