@@ -72,14 +72,14 @@ const RestaurantList = ({ token }) => {
         {restaurantData.map((restaurant) => (
           <div key={restaurant.restaurant_id}>
            
-            <img className='same-img' src={restaurant.images[0].url} alt={restaurant.restaurant_name} onClick={() => handleShare(restaurant.restaurant_name, restaurant.images[0].url, restaurant.avg_cost_for_two)} />
+            <img className='same-img' src={restaurant.images[0].url} alt={restaurant.restaurant_name} onClick={() => handleShare(restaurant.restaurant_name, restaurant.images[0].url, restaurant.restaurant_name)} />
             <div className='restaurant-name-rating'>
               <p>{restaurant.restaurant_name}</p>
             <p className='grey small'><small><i>popularity: &#9733;{restaurant.rating.restaurant_avg_rating} </i></small></p>
             </div>
             <div className='restaurant-name-rating'>
             <p className='small grey'>Cost for two {restaurant.currency.symbol}{restaurant.avg_cost_for_two}</p>
-            <img className="share-img" onClick={() => handleShare(restaurant.restaurant_name, restaurant.images[0].url, restaurant.avg_cost_for_two)} src="https://scontent.fgau3-3.fna.fbcdn.net/v/t39.30808-6/305931617_447005584132547_2821403551334281616_n.png?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=tIWGer8tK9YAX_OkrTz&_nc_ht=scontent.fgau3-3.fna&oh=00_AfC721Lxga8iE8IuLiVF4J3bWvnKUi_L1RaBGQgxSOSCEQ&oe=654D4131" alt="" />
+            <img className="share-img" onClick={() => handleShare(restaurant.restaurant_name, restaurant.images[0].url, restaurant.restaurant_name)} src="https://scontent.fgau3-3.fna.fbcdn.net/v/t39.30808-6/305931617_447005584132547_2821403551334281616_n.png?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=tIWGer8tK9YAX_OkrTz&_nc_ht=scontent.fgau3-3.fna&oh=00_AfC721Lxga8iE8IuLiVF4J3bWvnKUi_L1RaBGQgxSOSCEQ&oe=654D4131" alt="" />
             </div>
             
           </div>
